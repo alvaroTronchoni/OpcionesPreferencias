@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+     <PreferenceCategory
+         android:key="opcionesUsuario"
+         android:title="Usuario"
+         android:persistent="false">
+          <PreferenceScreen
+              android:key="datosUsuarios"
+              android:title="Cambiar datos de usuario"
+              android:persistent="false">
+              <EditTextPreference
+                   android:key="email"
+                   android:title="Introduce tu email"
+                   android:summary="Email"
+                   android:dialogTitle="Introducir email" />
+              <EditTextPreference
+                  android:key="nombre"
+                  android:title="Nombre de usuario"
+                  android:summary="Nombre"
+                  android:dialogTitle="Introduce nombre" />
+              <EditTextPreference
+                  android:key="apellidos"
+                  android:title="Apellidos de usuario"
+                  android:summary="Apellidos"
+                  android:dialogTitle="Introduce apellidos" />
+          </PreferenceScreen>
+     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="opcionesApariencia"
+        android:title="Apariencia"
+        android:persistent="false">
+        <PreferenceScreen
+            android:key="datosApariencia"
+            android:title="Cambiar datos de apariencia"
+            android:persistent="false">
+
+            <ListPreference
+                android:key="colorFondo"
+                android:title="Color de Fondo"
+                android:summary="Color del Fondo"
+                android:dialogTitle="Selecciona un color"
+                android:entries="@array/textoColorFondo"
+                android:entryValues="@array/accionColorFondo"/>
+
+            <ListPreference
+                android:key="colorLetra"
+                android:title="Color de Fuente"
+                android:summary="Color de la Fuente"
+                android:dialogTitle="Selecciona un color"
+                android:entries="@array/textoColorLetra"
+                android:entryValues="@array/accionColorLetra"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

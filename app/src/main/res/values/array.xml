@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="textoColorFondo">
+        <item name="rojoTF">Rojo</item>
+        <item name="amarilloTF">Amarillo</item>
+        <item name="verdeTF">Verde</item>
+    </array>
+    <string-array name="accionColorFondo">
+        <item name="rojoAF">rojo</item>
+        <item name="amarilloAF">amarillo</item>
+        <item name="verdeAF">verde</item>
+    </string-array>
+    <array name="textoColorLetra">
+        <item name="blancoTL">Blanco</item>
+        <item name="negroTL">Negro</item>
+        <item name="azulTL">Azul</item>
+    </array>
+    <string-array name="accionColorLetra">
+        <item name="blancoAL">blanco</item>
+        <item name="negroAL">negro</item>
+        <item name="azulAL">azul</item>
+    </string-array>
+
+</resources>
